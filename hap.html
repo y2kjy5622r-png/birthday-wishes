@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>生日快乐</title>
+  <style>
+    /* 设置背景和页面居中 */
+    body {
+      background-color: #f5e1ff; /* 选择柔和的背景色 */
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* 设置字体样式和动画 */
+    .message {
+      font-size: 48px;
+      font-weight: bold;
+      color: #ff1493; /* 选择浪漫的粉色字体 */
+      white-space: nowrap; /* 不换行 */
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      animation: float 15s linear infinite;
+    }
+
+    /* 定义飘动效果 */
+    @keyframes float {
+      0% {
+        transform: translateX(-100%);
+      }
+      50% {
+        transform: translateX(50%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+    
+    /* 提示语样式 */
+    .tip {
+      font-size: 20px;
+      color: #fff;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 动态祝福语 -->
+  <div class="message">
+    生日快乐！愿你永远幸福！
+  </div>
+
+  <!-- 额外提示 -->
+  <div class="tip">
+  </div>
+</body>
+</html>
